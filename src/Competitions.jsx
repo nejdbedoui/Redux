@@ -3,11 +3,13 @@ import * as service from './service';
 import Competition from './Competition';
 function Competitions() {
     const [data, setData] = React.useState([]);
+
     const fetchdata = () => {
       service.getAll().then((data) => {
         setData(data);
       });
     }
+
     React.useEffect(() => {
       fetchdata();
     }, []);

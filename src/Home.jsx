@@ -5,7 +5,6 @@ export default class Home extends Component {
     constructor(props) {
         super(props);
         this.state = { visible: true };
-  
     }
     componentDidMount()  {
         setTimeout(() => {
@@ -17,7 +16,7 @@ export default class Home extends Component {
     return (
         <>
         
-        {visible ? <h1>Home</h1>: null}
+        { visible ? <h1>Welcome to Our Competition World</h1> : null }
         
         {/* <Outlet /> */}
           

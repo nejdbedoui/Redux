@@ -28,7 +28,6 @@ function App() {
 <Router>
 <NavigationBar />
       <Routes>
-        
         <Route path="/" element={<Home />} />
         <Route path="/competitions" element={<Competitions />} />
         <Route path="/details/:id" element={<CompetitionDetails />} />

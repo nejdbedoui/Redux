@@ -1,18 +1,28 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { setData, setEmail } from './store';
+import { useDispatch, useSelector } from 'react-redux';
+import { setData, setEmail, setPlayers } from './store';
 import * as service from './service';
 function AddPlayer({data,id}) {
     const [playerName, setPlayerName] = useState('');
     const dispatch = useDispatch();
+    let players=useSelector((state)=>state.players);
     const handleInputChange = (event) => {
         setPlayerName(event.target.value);
       };
 
       const handleAddClick = async () => {
-        if (data.find((item) => item.players.find((item2) => item2.name === playerName))) {
+        let item2=data.find((item) => item.id==id)
+        if ( item2.players.find((item2) => item2.name === playerName)) {
             alert('Player already exists');
-        } else {
+        }
+
+
+        // if (data.find((item) => item.players.find((item2) => item2.name === playerName))) {
+        //     alert('Player already exists');
+        // } 
+
+
+        else {
             let item=data.find((item) => item.id==id)
             if(!item.players){
                 item.players=[];
@@ -23,6 +33,7 @@ function AddPlayer({data,id}) {
 
             dispatch(setData(playerName));
             dispatch(setEmail(playerName+"@gmail.com"));
+            dispatch(setPlayers((playerName)))
            
           }
     };

@@ -32,15 +32,6 @@ export const deleteContent = async (id) => {
   }
 };
 
-export const getAll = async () => {
-  try {
-    const response = await axios.get(`${API_BASE_URL}`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching all content:', error);
-    throw error;
-  }
-};
 
 export const getOne = async (id) => {
   try {
@@ -51,6 +42,33 @@ export const getOne = async (id) => {
     throw error;
   }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const getAll = async () => {
+    try {
+      const response = await axios.get(`${API_BASE_URL}`);
+      return response.data;
+    } catch (error) {
+      console.error('Error fetching all content:', error);
+      throw error;
+    }
+  };
 
 export const addPlayerToEvent = async (data) => {
     try {
