@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "Hackathon",
+      "fees": "100",
+      "date": "01/04/2023",
+      "participants": 5,
+      "description": "Lorem ipsum ",
+      "players": [
+        {
+          "name": "fedi"
+        },
+        {
+          "name": "aaa"
+        },
+        {
+          "name": "aaab"
+        },
+        {
+          "name": "ergujhkhk"
+        },
+        {
+          "name": "yessine"
+        },
+        {
+          "name": "test"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Meet & Greet",
+      "fees": "30",
+      "date": "01/04/2023",
+      "participants": 0,
+      "description": "Lorem ipsum ",
+      "players": [
+        {
+          "name": "fedi"
+        }
+      ]
+    }
+  ]
+}
