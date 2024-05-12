@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { setData } from './store';
+import { setData, setEmail } from './store';
 import * as service from './service';
 function AddPlayer({data,id}) {
     const [playerName, setPlayerName] = useState('');
@@ -22,6 +22,7 @@ function AddPlayer({data,id}) {
             service.addPlayerToEvent(item);  
 
             dispatch(setData(playerName));
+            dispatch(setEmail(playerName+"@gmail.com"));
            
           }
     };

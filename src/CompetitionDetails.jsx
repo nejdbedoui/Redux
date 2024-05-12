@@ -12,7 +12,7 @@ function CompetitionDetails() {
     const [visible2, setVisible2] = React.useState(false);
 
     const player = useSelector((state) => state.data);
-
+    const playeremail = useSelector((state) => state.email);
     const fetchdata = () => {
         service.getAll().then((data) => {
             setData2(data);
@@ -50,6 +50,7 @@ function CompetitionDetails() {
       <div>
       <h2>Data from Redux Store:</h2>
       <p>{player}</p>
+      <p>{playeremail}</p>
     </div>
     </div>
   );

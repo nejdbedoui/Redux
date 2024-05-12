@@ -5,7 +5,7 @@
       "name": "Hackathon",
       "fees": "100",
       "date": "01/04/2023",
-      "participants": 5,
+      "participants": 1,
       "description": "Lorem ipsum ",
       "players": [
         {
@@ -25,6 +25,18 @@
         },
         {
           "name": "test"
+        },
+        {
+          "name": "aszdfs"
+        },
+        {
+          "name": "aadfs"
+        },
+        {
+          "name": "aadfsd"
+        },
+        {
+          "name": "asdq"
         }
       ]
     },
