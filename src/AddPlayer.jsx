@@ -8,11 +8,15 @@ function AddPlayer({data,id}) {
     const handleInputChange = (event) => {
         setPlayerName(event.target.value);
       };
+
       const handleAddClick = async () => {
         if (data.find((item) => item.players.find((item2) => item2.name === playerName))) {
             alert('Player already exists');
         } else {
             let item=data.find((item) => item.id==id)
+            if(!item.players){
+                item.players=[];
+            }
             item.players.push({name:playerName})
             item.participants=item.participants-1;
             service.addPlayerToEvent(item);  
