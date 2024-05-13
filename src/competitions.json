@@ -5,56 +5,65 @@
       "name": "Hackathon",
       "fees": "100",
       "date": "01/04/2023",
-      "participants": 0,
+      "participants": 2,
       "description": "Lorem ipsum ",
       "players": [
         {
-          "name": "asdq"
+          "name": "azersdf dzad"
         },
         {
-          "name": "aymen"
+          "name": "khalil"
         },
         {
-          "name": "aymen2"
+          "name": "rayen"
         },
         {
-          "name": "test22"
+          "name": "user"
         },
         {
-          "name": "adfsf"
+          "name": "user2"
         },
         {
-          "name": "adfsff"
+          "name": "user2s"
         },
         {
-          "name": "aymen2a"
+          "name": "zaf"
         },
         {
-          "name": "Black Holes"
+          "name": "azer"
         },
         {
-          "name": "Black Holess"
+          "name": "aa"
         },
         {
-          "name": "Black Holesss"
+          "name": "ad"
+        },
+        {
+          "name": "addd"
+        },
+        {
+          "name": "azd"
+        },
+        {
+          "name": "ezui7"
+        },
+        {
+          "name": "ezui7v"
+        },
+        {
+          "name": "azfsdf"
         },
         {
           "name": "asdf"
         },
         {
-          "name": "asdf sdfa"
+          "name": "asdfs"
         },
         {
-          "name": "asdf sdfafsdf"
+          "name": "asdfsdf"
         },
         {
-          "name": "asdf sdfafsdf sdf"
-        },
-        {
-          "name": "azersdf"
-        },
-        {
-          "name": "azersdf dzad"
+          "name": "asdfsdfsdf"
         }
       ]
     },

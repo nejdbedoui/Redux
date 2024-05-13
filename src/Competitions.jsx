@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import * as service from './service';
 import Competition from './Competition';
 function Competitions() {
-    const [data, setData] = React.useState([]);
+    const [data, setData] = useState([]);
 
     const fetchdata = () => {
       service.getAll().then((data) => {
@@ -10,7 +10,7 @@ function Competitions() {
       });
     }
 
-    React.useEffect(() => {
+    useEffect(() => {
       fetchdata();
     }, []);
 

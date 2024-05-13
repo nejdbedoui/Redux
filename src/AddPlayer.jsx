@@ -6,6 +6,8 @@ function AddPlayer({data,id}) {
     const [playerName, setPlayerName] = useState('');
     const dispatch = useDispatch();
     let players=useSelector((state)=>state.players);
+
+    
     const handleInputChange = (event) => {
         setPlayerName(event.target.value);
       };
@@ -28,7 +30,7 @@ function AddPlayer({data,id}) {
                 item.players=[];
             }
             item.players.push({name:playerName})
-            item.participants=item.participants-1;
+           // item.participants=item.participants-1;
             service.addPlayerToEvent(item);  
 
             dispatch(setData(playerName));

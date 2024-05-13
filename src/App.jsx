@@ -33,7 +33,7 @@ function App() {
         <Route path="/details/:id" element={<CompetitionDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>
+</Router>
 
     </>
   )

@@ -8,6 +8,7 @@ function CompetitionDetails() {
     const { id } = useParams();
     const [data, setData] = React.useState([]);//item
     const [data2, setData2] = React.useState([]);//list of items
+
     const [visible, setVisible] = React.useState(false);
     const [visible2, setVisible2] = React.useState(false);
 
@@ -22,6 +23,7 @@ function CompetitionDetails() {
             setData2(data);
             data.find((item) => {
                 if (item.id == id) {
+                    console.log(item)
                     setData(item);
                     if (item.participants > 0) {
                         setVisible(true)
@@ -41,7 +43,9 @@ function CompetitionDetails() {
 
     
     useEffect(() => {
-        console.log('it works')
+       let item=data
+       item.participants=item.participants-1;
+        setData(item)
     }, [players]);
 
     const show = (() => {
@@ -55,7 +59,20 @@ function CompetitionDetails() {
             participant: {data.participants}<br />
             {/* {visible?
       <button onClick={show}>participer</button>:null}<br/> */}
+
+
+
             <button disabled={!visible} onClick={show}>participer</button><br />
+
+
+
+
+
+
+
+
+
+
             {visible2 ?
                 <AddPlayer data={data2} id={id} /> : ""}
             <div>
@@ -64,7 +81,7 @@ function CompetitionDetails() {
                 <p>{playeremail}</p>
             </div>
 
-
+<h3>list</h3>
            {players.map((item,index) => (
             <p key={index}>{item}</p>
            ))}
